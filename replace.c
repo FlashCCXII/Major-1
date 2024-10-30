@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include "major1.h"
+
 int main()
 {
 	int replaceNum=0,replaceMask,index;
