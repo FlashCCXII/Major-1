@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "major1.h"
 
-int reverse(int num) {
+unsigned int reverse(int num) {
         unsigned int reversed = 0;
         
 
