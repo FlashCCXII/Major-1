@@ -1,55 +1,39 @@
-#include<stdio.h>
+#include <stdio.h>
 #include "major1.h"
 
-int replace(int num)
-{
-	int replaceNum=0,replaceMask,index;
-    while(1)
-    {
-	    printf("Input a positive integer less than 2 billion: ");
-	    scanf("%d",&replaceNum);
-        if(replaceNum<0 || replaceNum>2,000,000,000){
-            continue;
-          }
-        else{break;}
-    }
-    
-    while(1)
-    {
-	    printf("Input a positive integer mask less than 3 billion: ");
-	    scanf("%d",&replaceMask);
-        if(replaceMask<0 || replaceMask>3,000,000,000){
-            continue;
+void replace(unsigned int num) {
+    unsigned int replaceNum = num, replaceMask;
+    int index;
+
+	while(1) {
+        if (replaceNum > 0 && replaceNum < 2000000000) {
+            break;
         }
-        else{break;}
-    }
-    
-    while(1)
-    {
-        printf("enter bit replacement position from mask (0-indexed): ");
-	    scanf("%d",&index);
-	    if(index>31 || index<0){
-	        continue;
-          }
-        else{break;}
-    }
 
-	
-	int temp=(replaceMask>>index)&1;
+        printf("Input a positive integer mask less than 3 billion: ");
+        scanf("%u", &replaceMask);
+        if (replaceMask > 0 && replaceMask < 3000000000) {
+            break;
+        }
 
-
-	if(temp==1){
-		temp=temp<<index;
-		replaceNum|=temp;
-	}
-	else{ 
-		int flag=4294967295;
-		temp=1<<index;
-		
-		flag=flag^temp;
-		replaceNum&=flag;
+        printf("Enter bit replacement position from mask (0-indexed): ");
+        scanf("%d", &index);
+        if (index >= 0 && index <= 31) {
+            break;
+        }
 	}
 
-	printf("New integer : %d\n",replaceNum);
-	return 0;
+    int temp = (replaceMask >> index) & 1;
+
+    if (temp == 1) {
+        temp = temp << index;
+        replaceNum |= temp;
+    } else {
+        unsigned int flag = 4294967295;  // Use unsigned int to avoid overflow
+        temp = 1 << index;
+        flag = flag ^ temp;
+        replaceNum &= flag;
+    }
+
+    printf("New integer with bit %d from mask %u is: %u\n", index, replaceMask, replaceNum);
 }
