@@ -5,7 +5,7 @@ Noah Coon (reverse.c)
 Tumi Oladimeji (replace.c, README)
 
 # Brief Summary of the project's function.
-The project is a C coded program that implements a set operations supported by a menu that will prompt for a specific operation, that each of us individually worked on. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+The project is a C coded program that implements a set operations supported by a menu that will prompt for a specific operation, that each of us individually worked on. 
 
 
 # MENU
