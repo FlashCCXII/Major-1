@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "major1.h"
 
-void palindrome(int num){
+int palindrome(int num){
     while (num<=0 || num >= 2000000000){
         printf("Enter a positive integer less than 2 billion: ");
         scanf("%d",&num);
