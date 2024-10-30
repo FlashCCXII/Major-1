@@ -7,9 +7,9 @@
 void menu();
 unsigned int getNumber(char *prompt, unsigned int max);
 void createPalindrome(unsigned int num);
-void power(unsigned int num);
+int power(unsigned int num);
 unsigned int reverse(unsigned int num);
-void replace(unsigned int num);
-void palindrome(unsigned int num);
+int replace(unsigned int num);
+int palindrome(unsigned int num);
 
 #endif
