@@ -6,7 +6,7 @@ int main()
 	int replaceNum=0,replaceMask,index;
     while(1)
     {
-	    printf("Input a positive integer less than 2 million: ");
+	    printf("Input a positive integer less than 2 billion: ");
 	    scanf("%d",&replaceNum);
         if(replaceNum<0 || replaceNum>2,000,000,000){
             continue;
@@ -16,7 +16,7 @@ int main()
     
     while(1)
     {
-	    printf("Input a positive integer mask less than 3 million: ");
+	    printf("Input a positive integer mask less than 3 billion: ");
 	    scanf("%d",&replaceMask);
         if(replaceMask<0 || replaceMask>3,000,000,000){
             continue;
