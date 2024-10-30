@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "major1.h"
 
 int reverseBits(int num) {
         unsigned int reversed = 0;
