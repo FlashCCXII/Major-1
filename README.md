@@ -1,6 +1,6 @@
 # 3600 Major 1 Group Project
 Daniel Ajayi (Repo Owner, power.c)
-Terell White (palindrome.c)
+Destinee White (palindrome.c)
 Noah Coon (reverse.c)
 Tumi Oladimeji (replace.c)
 
