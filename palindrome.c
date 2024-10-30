@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "major1.h"
 
 void palindrome(int num){
     while (num<=0 || num >= 2000000000){
