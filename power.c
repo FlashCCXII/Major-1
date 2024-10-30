@@ -1,4 +1,4 @@
-//#include "major1.h"
+#include "major1.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
