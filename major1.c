@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-//#include "major1.h"
+#include "major1.h"
 
 int main() {
     unsigned int choice, num;
