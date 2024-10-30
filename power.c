@@ -4,7 +4,7 @@
 #include <math.h>
 
 
-void power(unsigned int num) {
+int power(unsigned int num) {
     if (num < 0 || num >= 2000000000) {
         printf("Error: The number is out of the valid range.\n");
         return 1;
