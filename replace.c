@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include "major1.h"
 
-void replace(int num)
+int replace(int num)
 {
 	int replaceNum=0,replaceMask,index;
     while(1)
