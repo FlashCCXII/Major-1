@@ -24,7 +24,7 @@ int main()
     
     while(1)
     {
-        printf("enter bit replacement position between 0 and 31 (0 or 31 can work) ");
+        printf("enter bit replacement position from mask (0-indexed): ");
 	    scanf("%d",&index);
 	    if(index>31 || index<0){
 	        continue;
@@ -48,6 +48,6 @@ int main()
 		replaceNum&=flag;
 	}
 
-	printf("New value: %d\n",replaceNum);
+	printf("New integer : %d\n",replaceNum);
 	return 0;
 }
